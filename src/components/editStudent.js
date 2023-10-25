@@ -19,7 +19,7 @@ function EditStudent()
 
     useEffect(()=>
     {
-        Axios.get("http://localhost:4000/studentRoute/update-student/"+id)
+        Axios.get("https://crud-deployment-backend-2-cyo4.onrender.com/studentRoute/update-student/"+id)
         .then((res)=>{
             if(res.status===200){
                 const {name,email,rollNo} = res.data;

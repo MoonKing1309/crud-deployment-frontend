@@ -4,7 +4,7 @@ function StudentListRow(props)
 {
     function handleClick(event) 
     {
-        Axios.delete(`http://localhost:4000/studentRoute/delete-student/${event.target.value}`)
+        Axios.delete(`https://crud-deployment-backend-2-cyo4.onrender.com/studentRoute/delete-student/${event.target.value}`)
             .then((res)=>{
                 if(res.status===200){
                     alert("Record Deleted Successfully");
